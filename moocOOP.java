@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class moocOOP {
 
     public static void main(String args[]) {
@@ -46,10 +48,47 @@ public class moocOOP {
             mortgage.waitOneYear();
             years = years + 1;
         }
-       mortgage.printBalance(); 
+        mortgage.printBalance(); 
 
        // Return a value from a method
         Song garden = new Song("In The Garden", 10910);
         System.out.println("The song " + garden.name() + " has a length of " + garden.length() + " seconds.");
+
+        Film chipmunks = new Film("Alvin and the Chipmunks", 3);
+        Scanner Scanner = new Scanner(System.in);
+
+        System.out.println("How old are you?");
+        int age = Integer.valueOf(Scanner.nextLine());
+
+        System.out.println();
+        if (age >= chipmunks.ageRating()) {
+            System.out.println("You may watch the film " + chipmunks.name());
+        }
+        else {
+            System.out.println("You may not watch the film " + chipmunks.name());
+        }
+
+        Gauge g = new Gauge();
+
+        while(!g.full()) {
+            System.out.println("Not full! Value : " + g.value());
+            g.increase();
+        }
+
+        System.out.println("Gauge full. " + g.value());
+        g.decrease();
+        System.out.println(g);
+
+        // A string representation of an object and the toString method
+        // a preferred way is to define a method for the object that returns a "string representation
+        // of the object
+        // Method returning the string representation is always 'toString'
+        
+        Agent bond = new Agent("James", "Bond");
+        bond.toString();
+        System.out.println(bond);
+
+        //Method Parameters
+
     }
 }
