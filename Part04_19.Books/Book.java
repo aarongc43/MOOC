@@ -10,5 +10,19 @@ public class Book {
         this.year = year;
     }
 
+    public String getName() {
+        return this.name;
+    }
 
+    public int getPages() {
+        return this.pages;
+    }
+
+    public int getYear() {
+        return this.year;
+    }
+
+    public String toString() {
+        return "The books you have read are: " + this.name + " " + this.pages + " pages" + " " + this.year;
+    }
 }

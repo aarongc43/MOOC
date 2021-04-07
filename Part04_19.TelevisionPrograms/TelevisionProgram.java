@@ -24,4 +24,4 @@ public class TelevisionProgram {
     public String toString() {
         return this.name + ", " + this.duration + " minutes";
     }
-}
+
