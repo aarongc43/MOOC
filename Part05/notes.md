@@ -52,3 +52,5 @@ that is being examined by using a type cast.
 # Object as a method's return value
 
 A method can return an object of any type.
+The 'final' keyword used in a class for a variable means that these object variables cannot
+be modified after they have been set in the constructor.
