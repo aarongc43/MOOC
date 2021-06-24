@@ -19,6 +19,7 @@ public class Suitcase {
         this.items.add(item);
     }
 
+    // getting weight for all each suitcase added 
     public int totalWeight() {
         int suitcaseWeight = 0;
 
